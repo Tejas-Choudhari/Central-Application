@@ -1,0 +1,23 @@
+server:
+  port: 7000
+
+#  spring:
+#    profiles:
+#      include: >
+#        COMMON
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Central_Application
+    username: root
+    password: Tejas#07
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+
+  main:
+    allow-bean-definition-overriding: true
+
+
