@@ -4,7 +4,7 @@ import lombok.Data;
 
 @Data
 public class CentralDto {
-    private String serviceName="microservice-one";
+    private String serviceName = "microservice-one";
     private long id;
 
     //extra fields

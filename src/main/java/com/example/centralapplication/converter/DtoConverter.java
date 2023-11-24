@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 @Component
 public class DtoConverter {
 
-    public CentralDto entiyToDto(CentralEntity centralEntity ){
+    public CentralDto entiyToDto(CentralEntity centralEntity) {
 
         CentralDto centralDto = new CentralDto();
 
@@ -33,13 +33,13 @@ public class DtoConverter {
         return centralDto;
     }
 
-    public List<CentralDto> entitiesToDtos(List<CentralEntity> centralEntities ) {
+    public List<CentralDto> entitiesToDtos(List<CentralEntity> centralEntities) {
         return centralEntities.stream()
                 .map(this::entiyToDto)
                 .collect(Collectors.toList());
     }
 
-    public CentralEntity dtoToEntity(CentralDto centralDto){
+    public CentralEntity dtoToEntity(CentralDto centralDto) {
 
         CentralEntity centralEntity = new CentralEntity();
 

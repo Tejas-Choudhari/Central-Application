@@ -27,18 +27,15 @@ public class CentralController {
     @Autowired
     private DtoConverter dtoConverter;
 
-
     @PostMapping("/api/data")
     public void saveAuditData(@RequestBody CentralEntity centralEntity) {
         logger.info("inside the /api/data API ");
-//        centralService.saveEntity(centralEntity);
         centralRepo.save(centralEntity);
-
     }
 
     @GetMapping("/findAll")
-    public List<CentralDto> getall(){
-        List<CentralEntity> findAll=centralRepo.findAll();
+    public List<CentralDto> getall() {
+        List<CentralEntity> findAll = centralRepo.findAll();
         return dtoConverter.entitiesToDtos(findAll);
     }
 
