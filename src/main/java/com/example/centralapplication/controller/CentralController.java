@@ -29,7 +29,7 @@ public class CentralController {
 
     @PostMapping("/api/data")
     public void saveAuditData(@RequestBody CentralEntity centralEntity) {
-        logger.info("inside the /api/data API ");
+        logger.info("Inside the /api/data API ");
         centralRepo.save(centralEntity);
     }
 

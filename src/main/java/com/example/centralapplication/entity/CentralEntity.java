@@ -16,7 +16,6 @@ public class CentralEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String serviceName;
 
     //extra fields
@@ -33,4 +32,5 @@ public class CentralEntity {
     private String hostName;
     private String response;
     private String errorTrace;
+    private String client_id;
 }
