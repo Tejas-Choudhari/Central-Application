@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @Slf4j
 @RestController
 
@@ -38,5 +37,4 @@ public class CentralController {
         List<CentralEntity> findAll = centralRepo.findAll();
         return dtoConverter.entitiesToDtos(findAll);
     }
-
 }
