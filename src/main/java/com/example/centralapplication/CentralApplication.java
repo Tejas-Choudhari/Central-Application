@@ -17,5 +17,4 @@ public class CentralApplication {
 		SpringApplication.run(CentralApplication.class, args);
 	}
 
-
 }

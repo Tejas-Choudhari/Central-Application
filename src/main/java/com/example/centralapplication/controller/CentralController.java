@@ -26,6 +26,11 @@ public class CentralController {
     @Autowired
     private DtoConverter dtoConverter;
 
+    public CentralController(CentralRepo centralRepo, DtoConverter dtoConverter) {
+        this.centralRepo = centralRepo;
+        this.dtoConverter = dtoConverter;
+    }
+
     @PostMapping("/api/data")
     public void saveAuditData(@RequestBody CentralEntity centralEntity) {
         logger.info("Inside the /api/data API ");
